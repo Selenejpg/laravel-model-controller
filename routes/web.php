@@ -22,3 +22,13 @@ Route::get('/', function () {
     return view('partials.index', compact('movies'));
 });
 
+Route::get('/movie/{id}', function ($id) {
+
+    $movies = config('movies');
+
+    //recuperare un solo dato dell'array globale
+    $movie = $movies[$id];
+    
+    return view('partials.show', compact('movie'));
+})->name('movie');
+

@@ -6,7 +6,7 @@
 
         <div class="row row-cols-4"> 
 
-    @forelse ($movies as $movie)
+    @forelse ($movies as $key => $movie)
 
         {{-- Se l'array contiene qualcosa fai... --}}
             <div class="ms-3 mt-4">
@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $movie['title'] }}</h5>
                         <p class="card-text">{{ $movie['description'] }}</p>
-                        <a href="#" class="btn btn-primary">Bottone inutile</a>
+                        <a href="{{route('movie', ['id' => $key])}}" class="btn btn-primary">Info del film</a>
                     </div>
                 </div>
             </div>
