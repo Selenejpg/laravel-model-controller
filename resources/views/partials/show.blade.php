@@ -5,7 +5,7 @@
 @section('content')
     {{-- codice per visualizzare singola card --}}
     <div class="d-flex justify-content-center">
-        <div class="ms-3 mt-4">
+        <div class="d-flex justify-content-center mt-4">
             <div class="col card text-center" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="mt-2 card-title">{{ $movie -> title }}</h5>
