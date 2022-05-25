@@ -8,8 +8,10 @@
         <div class="ms-3 mt-4">
             <div class="col card text-center" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $movie['title'] }}</h5>
-                    <p class="card-text">{{ $movie['description'] }}</p>
+                    <h5 class="mt-2 card-title">{{ $movie -> title }}</h5>
+                    <div class="mt-2 card-text">{{ $movie -> original_title }}</div>
+                    <div class="mt-2 card-text">{{ $movie -> nationality }}</div>
+                    <div class="mt-2 card-text">{{ $movie -> date }}</div>
                 </div>
             </div>
         </div>

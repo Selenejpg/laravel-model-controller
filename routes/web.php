@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
 
     $movies = config('movies');
@@ -21,14 +22,11 @@ Route::get('/', function () {
     
     return view('partials.index', compact('movies'));
 });
+*/
 
-Route::get('/movie/{id}', function ($id) {
+Route::get('/', 'MovieController@index')->name('home');
 
-    $movies = config('movies');
 
-    //recuperare un solo dato dell'array globale
-    $movie = $movies[$id];
-    
-    return view('partials.show', compact('movie'));
-})->name('movie');
+
+Route::get('/movie/{id}', 'MovieController@show')->name('movie');
 

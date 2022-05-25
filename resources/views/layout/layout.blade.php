@@ -13,7 +13,7 @@
     @include('includes.header')
 
     <div class="text-center mt-4">
-        <h1>Film</h1>
+        <h1>Lista film</h1>
     </div>
 
     {{-- contenuto dinamico in base alle pagine --}}

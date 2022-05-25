@@ -7,9 +7,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item ms-2">
-                    <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item ms-2">
                     <a class="nav-link text-dark" href="#">Film</a>
                 </li>
             </ul>

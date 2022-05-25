@@ -4,17 +4,17 @@
     
 @section('content')
 
-        <div class="row row-cols-4"> 
+        <div class="row row-cols-3"> 
 
     @forelse ($movies as $key => $movie)
 
         {{-- Se l'array contiene qualcosa fai... --}}
-            <div class="ms-3 mt-4">
+            <div class="d-flex justify-content-center mt-4">
                 <div class="col card text-center" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $movie['title'] }}</h5>
-                        <p class="card-text">{{ $movie['description'] }}</p>
-                        <a href="{{route('movie', ['id' => $key])}}" class="btn btn-primary">Info del film</a>
+                        <h5 class="card-title">{{ $movie -> title }}</h5>
+                        <p class="card-text">{{ $movie -> date }}</p>
+                        <a href="{{route('movie', ['id' => $key + 1])}}" class="btn btn-primary">Info del film</a>
                     </div>
                 </div>
             </div>
