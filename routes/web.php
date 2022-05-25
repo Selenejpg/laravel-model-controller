@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $movies = config('movies');
+
+    //compact funziona quando chiave e valore hanno la stessa nomenclatura. Ha la funzione di richiamare la chiave all'interno dell'array (entrambi stesso nome)
+    
+    return view('partials.index', compact('movies'));
 });
+
